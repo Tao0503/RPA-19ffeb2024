@@ -6,10 +6,10 @@ app = Flask(__name__)
 def index():
   return(render_template("index.html"))
 
-@app.route("/imageGPT",methods=["GET","POST"])
+@app.route("/image_gpt",methods=["GET","POST"])
 def main():
   r = request.form.get("r")
-  return(render_template("imageGPT.html"))
+  return(render_template("image_gpt.html"))
 
 if __name__ == "__main__":
          app.run()
