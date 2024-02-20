@@ -12,4 +12,4 @@ def main():
   return(render_template("image_gpt.html"))
 
 if __name__ == "__main__":
-         app.run()
+  app.run()
