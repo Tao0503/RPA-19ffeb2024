@@ -2,7 +2,7 @@ from flask import Flask,request,render_template
 
 app = Flask(__name__)
 
-r = ""
+r = "r";
 first_time = 1;
 
 @app.route("/",methods=["GET","POST"])
