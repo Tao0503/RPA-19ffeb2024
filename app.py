@@ -21,7 +21,7 @@ def main():
 def end():
   return(render_template("image_gpt.html"))
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     app.run()
 
 
