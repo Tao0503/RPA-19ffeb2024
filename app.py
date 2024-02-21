@@ -1,4 +1,6 @@
 from flask import Flask,request,render_template
+import replicate
+import os
 
 app = Flask(__name__)
 
@@ -18,6 +20,12 @@ def main():
     return(render_template("main.html",r=r))
 @app.route("/image_gpt",methods=["GET","POST"])
 def image_gpt():
+    return(render_template(i="image_gpt.html"))
+@app.route("/image_result",methods=["GET","POST"])
+def image_result():
+
+
+    
     return(render_template(i="image_gpt.html"))
 @app.route("/end",methods=["GET","POST"])
 
