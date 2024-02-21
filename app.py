@@ -2,8 +2,8 @@ from flask import Flask,request,render_template
 
 app = Flask(__name__)
 
-r = "r";
-first_time = 1;
+r = ""
+first_time = 1
 
 @app.route("/",methods=["GET","POST"])
 def index():
@@ -16,8 +16,11 @@ def main():
         r = request.form.get("r")
         first_time=0
     return(render_template("main.html",r=r))
-
+@app.route("/image_gpt",methods=["GET","POST"])
+def image_gpt():
+    return(render_template(i="image_gpt.html"))
 @app.route("/end",methods=["GET","POST"])
+
 def end():
   return(render_template("image_gpt.html"))
 
