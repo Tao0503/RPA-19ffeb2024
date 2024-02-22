@@ -2,10 +2,15 @@ from flask import Flask,request,render_template
 import replicate
 import os
 import time
+import openai import OpenAI
 
-app = Flask(__name__)
+openai_api_key=os.environ["OpenAI_API_TOKEN"]="r8_2idkAutIh1jCAVVRIbEDgqt9zNUdbhG2cS1AF"
 os.environ["REPLICATE_API_TOKEN"]="r8_2idkAutIh1jCAVVRIbEDgqt9zNUdbhG2cS1AF"
 
+model = OpenAI(api_key=
+
+app=Flask(__name__)
+               
 r = ""
 first_time = 1
 
