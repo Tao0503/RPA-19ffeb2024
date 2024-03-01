@@ -1,5 +1,4 @@
 from flask import Flask
-import replicate
 import os
 import time
 
