@@ -2,6 +2,7 @@ from flask import Flask,request,render_template
 import replicate
 import os
 import time
+pip install gunicorn
 
 app = Flask(__name__)
 
@@ -26,5 +27,5 @@ def end():
     return(render_template("end.html"))
 
 if __name__ == "__main__":
-     app.run(debug=True ,port=8080,use_reloader=False)
+     app.run()
 
