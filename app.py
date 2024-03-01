@@ -12,7 +12,7 @@ def main():
     global first_time
     if first_time==1:
         first_time=0
-    return(render_template("main.html")
+    return(render_template("main.html"))
     
 @app.route("/about_mrs_huang", methods=["GET", "POST"])
 def about_mrs_huang():
