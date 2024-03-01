@@ -16,7 +16,7 @@ def main():
     
 @app.route("/about_mrs_huang/", methods=["GET", "POST"])
 def about_mrs_huang():
-    return render_template("about_mrs_huang.html")
+    return(render_template("about_mrs_huang.html"))
 
 
 @app.route("/end/",methods=["GET","POST"])
