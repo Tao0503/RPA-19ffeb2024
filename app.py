@@ -1,8 +1,9 @@
-from flask import Flask,request,render_template
+pip install gunicorn
+from flask import Flask
 import replicate
 import os
 import time
-pip install gunicorn
+
 
 app = Flask(__name__)
 
@@ -28,4 +29,4 @@ def end():
 
 if __name__ == "__main__":
      app.run()
-
+gunicorn app:app --works 4
