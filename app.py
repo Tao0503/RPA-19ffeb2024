@@ -1,4 +1,3 @@
-pip install gunicorn
 from flask import Flask
 import replicate
 import os
